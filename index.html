@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>NSSF Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<html>
+
+<body>
+    <div class="save">
+    <h1>NSSF Savings Calculator</h1>
+    <form>
+        <label for="age">Enter your current age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="yearsworked">Enter the number of years you have been working:</label>
+        <input type="number" id="yearsworked" name="yearsworked"><br><br>
+        <label for="basicsalary">Enter your basic salary:</label>
+        <input type="number" id="basicsalary" name="basicsalary"><br><br>
+        <input type="button" value="Calculate" onclick="calculateNSSF()">
+    </form>
+    </div>
+    <div id="result"></div>
+    <script>
+      
+function calculateNSSF() {
+  const age = document.getElementById("age").value;
+  const yearsWorked = document.getElementById("yearsworked").value;
+  const basicSalary = document.getElementById("basicsalary").value;
+  const retirementAge = 55; // Assuming retirement age is 55
+  const yearsToRetirement = retirementAge - age;
+  const totalNSSF = (basicSalary * yearsWorked) * 12; // Assuming 5% NSSF contribution
+  document.getElementById("result").innerHTML = `
+    <p>Years to retirement: ${yearsToRetirement} years</p>
+    <p>Total NSSF amount accumulated: UGX ${totalNSSF.toLocaleString()}</p>
+  `;
+}  
+    </script>
+    
+</body>
+
+</html>

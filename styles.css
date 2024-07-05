@@ -1,0 +1,64 @@
+/* Style the body and form elements */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #da8eebcc;
+
+}
+
+form {
+  width: 50%;
+  margin: 40px auto;
+  background-color: #81d61071;
+  padding: 15px;
+  border: 1px solid #d12525;
+  box-shadow: 0 0 20px rgba(15, 14, 14, 0.1);
+}
+
+
+/* Style the input fields and labels */
+label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0,10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: #080808;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the result section */
+#result {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 15px solid #ddd;
+  margin-top: 1px;
+}
+
+#result p {
+  margin-bottom: 10px;
+}
+
+/* Add some visual appeal */
+h1 {
+  color: #0c5f0f;
+}
+
+form {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
